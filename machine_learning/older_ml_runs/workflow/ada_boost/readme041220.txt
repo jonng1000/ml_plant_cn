@@ -1,0 +1,5 @@
+Files
+ada_record.txt: record of ada boost trial ml runs
+ada_scores.txt: ada boost scores, trial ml runs
+ml_ada_hp.py: ada boost ml script
+ml_data_label_scores.txt: also ada boost scores, trial ml runs

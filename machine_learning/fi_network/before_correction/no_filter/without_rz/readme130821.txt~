@@ -1,0 +1,12 @@
+Folders
+diff_grps: looking at different groups of features to explore mutual
+rank distribution
+
+
+- create_big_score_file.py: create big score file, in a matrix
+- explore_scores_5grps.py, explore_scores_4grps.py:
+plots score distribution of 4/5 (depending on script) feature categories
+- *_mr.png: histograms from explore_mr_grps.py in CN, showing MR distribution
+- *_hist.png and *_step.png: histograms showing score distribution from differe\
+nt
+feature categories

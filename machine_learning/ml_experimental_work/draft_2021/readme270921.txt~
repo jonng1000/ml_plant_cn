@@ -1,0 +1,36 @@
+Folders
+output_interpro: ml scores when interpro computational GO terms
+are used to predict experimental GO class targets
+output_tair: ml scores when tair computational GO terms
+are used to predict experimental GO class targets
+
+Files
+class_labels_linux.txt: GO class targets for ml,  with linux
+line endings
+feature_type.txt: list of feature types for ml work
+GO_counts.txt: 
+
+go.obo: GO database
+log050521*, log090521*: log file from my ml workflow, number of
+cores is indicated, 4 means 4 cores and models are pickled, 4b
+means 4 cores
+log_dryrun.txt: log file with using parallel with its --dryrun
+option, on my ml workflow
+ml_dataset_dc.txt : ml dataset
+test_dataset.txt: smaller, test dataset
+
+Scripts
+create_go_features.py: create computational GO features
+
+multi_go_wrapper.py: wrapper script for ml workflow
+rf_go.py: runs ml workflow, with a specific number of cores
+rf_go_v2.py: updated version of rf_go.py, but models are pickled
+rem_specific_pcg.py: removes parent and child GO terms corresponding to the
+class label
+wrapper_go.py: wrapper script for ml workflow
+wrapper_go_v2.py: updated version of wrapper_go.py to make things more efficient
+
+Misc
+Needed to do below to change how my class labels are named in the target list:
+sed 's/go_GO/GO/g' class_labels_go.txt > class_labels_linux.txt
+This is to make my target list compatible with my new workflow

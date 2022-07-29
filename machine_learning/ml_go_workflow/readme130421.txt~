@@ -1,0 +1,12 @@
+Folders
+contf_runs: ml workflow on all continuous features as targets
+cores_test: test to see how time taken to run ml workflow varies with number
+of cores
+dge_runs: ml workflow on all DGE features as targets
+go_runs: ml runs on all my GO classes to be tested
+hp_test: HP tests using random search to find good HPs, also has work done
+to analyse these results
+rest_catf_runs: ml workflow on all other categorical features (non GO and DGE) as targets
+time_repeat: repeat of time test, 5 ml models, model training only without
+testing, measure time taken, 2 randomly chosen GO classes
+time_trial: time test of 5 models

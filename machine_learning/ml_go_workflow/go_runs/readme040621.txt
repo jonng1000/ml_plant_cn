@@ -1,0 +1,4 @@
+Folders
+fixed_hps: GO runs where fixed hps are used, these hps are picked based on my hp
+tests
+vary_hps: GO runs where hps are optimised for each GO class via random search 

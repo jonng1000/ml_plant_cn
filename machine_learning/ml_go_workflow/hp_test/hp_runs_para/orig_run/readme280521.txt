@@ -1,0 +1,54 @@
+Folders
+output_71g1hp: output from my ml workflow, 71 GO classes,
+most freq hp group - group 1
+output_71g2hp: output from my ml workflow, 71 GO classes,
+most freq hp group - group 2      
+output_71ohp: output from my ml workflow, 71 GO classes, selected hps which have
+been optimised
+output_16g1hp: output from my ml workflow, 16 GO classes,
+most freq hp group - group 1      
+output_16g2hp: output from my ml workflow, 16 GO classes,
+most freq hp group - group 2   
+output_16chp: output from my ml workflow, 16 GO classes, selected hps which have
+been optimised
+output_ran: output from my ml workflow, 71 GO classes, selected hps which have
+been optimised, shuffled ml data
+output_ran100: output from my ml workflow, 71 GO classes, selected hps which have
+been optimised, shuffled ml data 100 times
+output_ran100_add: additional outout from random shuffled 100 times, since for
+some strange reason, the first workflow didn't test all GO classes
+
+Files
+log*.txt: log files for ml workflow
+- if file has the _b/2/3 suffix, it means it is paired with the
+log file without this suffix
+ml_dataset_dc.txt: ml dataset
+class_labels16_linux.txt: 16 GO classes (marek selections) for ml workflow
+ct_go_hp_linux.txt: 71 GO classes for ml workflow
+ct_go_hp_linux_add.txt: a few classes (part of the 71 GO classes), which I had
+to test again since my workflow on random shuffle 100 times, missed a few
+go.obo: GO file
+ml_dataset_dc.txt: ml dataset
+test_go_hp_linux.txt: small class targets, for testing
+
+Scripts:
+rf_go_ghp.py: run rf model in my ml workflow, but used selected grps of hps
+(selected from hp test - most freq hp grp)
+rf_go_v2.py: run rf model in my ml workflow (hp selected are the most freq
+individual hps from hp test)
+rem_specific_pcg.py: removing corresponding parent and child GO terms from
+class target
+rf_go_ran.py: rf model with shuffling of ml data, for each column's values
+wrapper_go_v2.py: wrapper script to run my ml workflow
+
+Misc
+Needed to do below to change how my class labels are named in the target list:
+sed 's/go_GO/GO/g' ct_go_hp_linux.txt >  ct_go_hp_linux_t.txt
+This is to make my target list compatible with my new workflow
+
+output_ran is done 12 Oct 2021, coz i wanna compare shuffled and real ml data,
+to show that my rf workflow actually gives decent scores
+
+output_ran100 is done Jan 2022 100 times, coz marek said i need to do this to
+ensure comparison w chosen hps are valid, since even if its better than shuffled
+x1 time, it could be due to chance, so its not good

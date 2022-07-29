@@ -1,0 +1,19 @@
+Folders
+output: results from ml workflow
+
+Files
+class_labels_dge.txt: list of DGE targets for ml
+class_labels_linux.txt: same as class_labels_dge.txt, but with linux
+line endings for use with parallel
+feature_type.txt: list of feature types for ml work
+log_110621.txt: log file from my ml workflow
+log_dryrun110621.txt: log file with using parallel with its --dryrun
+option, on my ml workflow
+ml_dataset_dc.txt: ml dataset
+test_dataset_dge.txt: test ml dataset for ml workflow
+
+Scripts
+rem_specific_dge.py: removes DGE terms complementary to the
+class label
+rf_dge.py: rf script for model training with DGE terms
+wrapper_dge.py: wrapper script for ml workflow, DGE terms

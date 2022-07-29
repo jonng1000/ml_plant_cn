@@ -1,0 +1,12 @@
+Files
+impt_feature_ranks.txt: ranks of feature importance values, with a
+threshold (F1/R sq) of >= 0.4
+mutual_ranks.txt: mutual ranks of feature importances, with a
+threshold (F1/R sq) of >= 0.4
+
+Scripts
+build_fi_network.py: build mutual ranks from feature ranks
+
+Notes
+Have moved files around, so file paths in my scripts may be outdated, if I
+rerun them, may need to rename them

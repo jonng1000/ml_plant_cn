@@ -1,0 +1,17 @@
+Folders
+perm_test_outdated: outdated permutation test reuslts so can ignore,
+this is when permutation results keep on getting overwritten, so i
+only have the results for the last permutation test, which as
+5 permutations
+
+Files
+*.txt: they are output files after ML workflow is completed
+log .txt files: log files tracking how long my workflow took.
+log200320.txt shows how long the permutation test took
+while log210320.txt shows how long building the model
+from blocks of features took (but this specific process
+was run on many cpus simultaneously)
+
+Scripts
+*.py: run ML workflow, score modles, calculate importance of features,
+build model from blocks of features and score it

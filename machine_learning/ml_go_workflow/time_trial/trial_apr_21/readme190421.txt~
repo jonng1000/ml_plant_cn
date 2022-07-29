@@ -1,0 +1,25 @@
+Folders
+logr_test, lsv_test: time trial to test for convergence with more iterations,
+for logistic regression and linear svm respectively
+results: results for time trial
+logr_lsv_test:
+- this is when i tried to run my full trial ml workflow on
+all 16 GO classes, but it took too long so i stopped it early
+- description of all its contents are found in this readme, as its the same
+thing
+
+Files
+class_targets_go.txt: list of GO terms to use as class labels for time trial,
+marek's selections
+feature_type.txt: contains which features are categorical/continuous, for ml
+workflow
+go.obo: GO database file, for ml workflow
+log060421.txt, log070421.txt: log files showing print output when time trial
+is run
+ml_dataset_dc.txt; ml dataset
+
+Scripts
+multi_go_wrapper.py: wrapper script for ml workflow
+multi_ml_models.py: runs ml workflow
+rem_specific_pcg.py: removes parent and child GO terms corresponding to the
+class label

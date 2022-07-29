@@ -1,0 +1,26 @@
+Folders
+draft_2021: experimental GO work in 2021, but can ignore and only refer if needed
+output_all: ml output for all GO targets
+output_hp: ml output for limited targets, hp optimisation
+output_tt: ml output for limited targets, time trial
+output_ttrs: ml output for limited targets, time trial with random search
+
+Files
+feature_type.txt: feature types for ml training
+GO_10targets_linux.txt, GO_20targets_linux.txt: 10/20 GO targets for ml training,
+linux line endings
+go_features_interpro.txt: GO features from interproscan (from interpro features used for
+ml project)
+go.obo: main GO database
+go_targets_dataset.txt: GO targets as class labels for ml
+GO_targets_linux.txt: all GO targets for ml training, linux line endings
+log*: log files
+test_GOtarget_linux.txt: GO targets for testing, linux line endings
+
+Script
+all_models_rs.py: time trial, multiple models with random search
+all_models_test.py: time trial, multiple models without random search
+modify_GO_data.py:remove parent and child GO terms for ml training
+rf_go_all.py: ml training, all GO targets
+rf_hp.py: ml training, hp optimisation
+wrapper_go_expt.py: wrapper script for experimental ml workflow

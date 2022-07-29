@@ -1,0 +1,19 @@
+Folders
+lsv_test, logr_test: tests to determine how many iterations is needed for
+convergence
+
+Scripts
+multi_models_go_v2.py: ml workflow script
+multi_go_wrapper.py: wrapper script for above script
+rem_specific_pcg.py: removes parent and child GO terms for each GO term used
+as class label
+
+Files
+class_targets_go.txt: class label for this test workflow
+scores and fi .txt files: results when running this test workflow several times
+- 50mt1: 50m iterations, test1
+- itr100m: 100m iterations
+- itr50m: 50m iterations
+- just fi.txt without and extra labels: one more test, not sure what it is but
+Has only files unique to this test
+

@@ -1,0 +1,24 @@
+Folders
+output: results from ml workflow, contains feature importance, hp results,
+scores and pickled models
+
+Files
+class_labels_linux.txt: list of GO class targets for ml, but with linux
+line endings for use with parallel
+feature_type.txt: list of feature types for ml work
+go.obo: GO database
+log_110621.txt: log file from ml workflow
+log290521.txt: outdated incomplete log file from ml workflow
+ml_dataset_dc.txt : ml dataset
+test_dataset.txt: smaller, test dataset
+
+Scripts
+rf_go_rs.py: runs ml workflow, with 5 iterations of random search for hp optimisation
+rem_specific_pcg.py: removes parent and child GO terms corresponding to the
+class label
+wrapper_go_v2.py: wrapper script for ml workflow
+
+Misc
+Needed to do below to change how my class labels are named in the target list:
+sed 's/go_GO/GO/g' class_labels_go.txt > class_labels_linux.txt
+This is to make my target list compatible with my new workflow

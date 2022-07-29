@@ -1,0 +1,28 @@
+Folders
+output_interpro: ml scores when interpro computational GO terms
+are used to predict experimental GO class targets
+output_tair: ml scores when tair computational GO terms
+are used to predict experimental GO class targets
+
+Files
+class_labels_linux.txt: GO class targets for ml,  with linux
+line endings
+feature_type.txt: list of feature types for ml work
+GO_counts.txt: GO terms with genes associated with each one, along
+with gene counts per term
+go_features_dataset.txt: GO features from tair, for ml
+go_features_interpro.txt: GO features from interpro, for ml
+go.obo: GO database
+go_targets_dataset.txt: experimental GO class targets from tair,
+for ml
+log*: log file from my ml workflow, if test is included, refers to
+log file from test runs
+test_class_labels_linux.txt: test GO class targets, for testing ml
+workflow
+
+Scripts
+create_go_features.py: create computational GO features
+rf_go_v2.py: rf ml script, ml workflow
+modify_GO_data.py: removing GO class target, along with its parent
+and children terms, from dataset, during ml workflow
+wrapper_go_v2.py: wrapper script, ml workflow

@@ -1,0 +1,6 @@
+Folders
+clusters: feature importance clusters done by mcl
+without_rz: contains work done when mutual rank (MR) calculation is done
+incorrectly, as feature importance values of 0 have not been removed
+
+Files

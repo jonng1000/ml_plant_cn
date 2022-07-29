@@ -1,0 +1,3 @@
+time_repeat: repeat of time test, 5 ml models, model training only without
+testing, measure time taken, 2 randomly chosen GO classes
+time_trial: time test of 5 models

@@ -1,0 +1,2 @@
+These files are produced when svm_loops.py is run, 100 runs of grid searches set to precision, and  model
+building.

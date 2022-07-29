@@ -1,0 +1,30 @@
+This folder contains the output from my random forest
+workflow, when it is used on 2 GO classes,
+Golgi and nucleus. My workflow consists of:
+1) Creating raw dataset from PNAS supp data
+2) Preprocesing it to make it suitable for machine
+learning
+3) Randomly selection 1000 features 5 times, from
+each GO class. This results in 10 datasets.
+Steps 1-3 above are done on desktop, hence their
+files arent in this folder, unless they are needed
+for the below steps
+4) Run  rf_feature_extract_v3_p.py, which requires
+rfe_module_v3.py, on the 10 datasets. This generates
+model scores, permutation importace and feature
+importance. Feature importance not strictly needed
+but calculated just in case they are.
+5) Run build_RF_perm_f1000.py using output from
+step 4 above, to build model using features in
+batches, and score models.
+Steps 4-5 above are run using workstation, hence
+their files are stored here. Files are also grouped
+into folders as can be seen here, for better
+organisation. Hence if I want to rerun my scripts,
+need to shift files around to make them work.
+6) Scores and importance of features calculated
+by the different ways here, are moved back to
+desktop, where my plotting scripts,
+explore_scores.py, explore_features.py and
+explore_build_s.py are used to create plots for
+viewing.

@@ -1,0 +1,6 @@
+Folder
+ada_boost: early ada boost ml work
+random_forest: early random forest ml work
+cell_loc_16: ml work on 16 cell locations, takes my experience from running
+my draft workfows in the ada_boost and random_forest folders here. Used
+to present for my 2nd TAC

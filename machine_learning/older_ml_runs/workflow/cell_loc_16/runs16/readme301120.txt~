@@ -1,0 +1,31 @@
+Folders
+data16: datasets with 16 class labels, one for each of the 16 GO cell
+locations
+draft_run161120: early runs testing out hyperparameters on just one cell location,
+membrane
+ - cell_loc16_scores.txt, log_171120.txt: same as similar files described below
+ - feature_type.txt: describes the type of features (continuous/categorical)m
+   needed by my ml script
+ - ml_ohp_16cl.py: ml script, hp means hyperparameters, dunno what o means but
+   not important
+outdated: outdated scripts and associated files, can ignore as these dont work
+
+
+Files
+ada_cell16_scores.txt, brf_cell16_scores.txt, logr_cell16_scores.txt,
+lsv_cell16_scores.txt, rf_cell16_scores.txt: ml scores after running their
+respective ml scripts below
+ada_log211120.txt, logr_log221120.txt, lsv_log221120.txt: log file after running
+their respective ml scripts
+lsv_cell16_d_scores.txt, lsv_d_log221120.txt; not sure what these arem probably
+draft runs of lsv, can ignore
+
+
+Scripts
+ada_16cl.py, brf_16cl.py, logr_16cl.py, lsv_16cl.py, rf_16cl.py: ml script using
+adaboost, balanced random forest, logistric regression and random forest
+trained to predict 16 cell locations
+ - produces their respective scores file above
+test_lsvm_16cl_v2.py: test script to make sure ml script works, has some
+adjustments like 2-fold cv for gridsearch, only one set of hyerparameters
+tested etc

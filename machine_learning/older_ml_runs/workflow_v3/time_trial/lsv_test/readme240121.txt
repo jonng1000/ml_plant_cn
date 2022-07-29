@@ -1,0 +1,17 @@
+Scripts
+mm_go_v2_lsv_test.py: script to test out lsv with different number of iterations
+to achieve convergence
+multi_go_wrapper_lsv.py: wrapper script for above script
+
+Files
+class_targets_go.txt: class label for this test workflow
+scores and fi .txt files: results when running this test workflow several times
+- 50mt1: 50m iterations, test1
+- itr100m: 100m iterations
+- itr50m: 50m iterations
+- just fi.txt without and extra labels: one more test, not sure what it is but
+its not impt.
+
+Notes
+Has only files unique to this test
+

@@ -1,0 +1,8 @@
+Folders
+orig_run: original hp runs for optimisation, May 2021
+repeat_aug2021: repeat of the above, Aug 2021, just to ensure that
+my results are correct
+- there's another folder in
+~/machine_learning/ml_go_workflow/hp_test/hp_para_aug21
+which is similar to this, but with data corrected due to minor errors
+outdated: outdated info

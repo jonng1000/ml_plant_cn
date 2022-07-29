@@ -1,0 +1,4 @@
+Downloaded cds (primary transcript) in .gz files. Created  clean_gzip_fasta.sh to do
+the following : 1) go through all .gz files 2) extract species name 3) unzip it
+and remove all '*' characters, save it  as a .fasta file with species name from
+2), as I want the new files to have shorter names.

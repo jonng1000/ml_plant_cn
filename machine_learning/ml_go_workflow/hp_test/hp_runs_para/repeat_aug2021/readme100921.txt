@@ -1,0 +1,31 @@
+Folders
+output_71g1hp: output from my ml workflow, 71 GO classes,
+most freq hp group - group 1
+output_71g2hp: output from my ml workflow, 71 GO classes,
+most freq hp group - group 2      
+output_71chp: output from my ml workflow, 71 GO classes, selected hps which have
+been optimised
+output71_dhp: output from my ml workflow, 71 GO classes,
+default hp
+output71_rshp: output from my ml workflow, 71 GO classes,
+hps chosen from random search for each class
+
+Files
+log*.txt: log files for ml workflow
+ml_dataset_dc.txt: ml dataset
+class_labels16_linux.txt: 16 GO classes (marek selections) for ml workflow
+ct_go_hp_linux.txt: 71 GO classes for ml workflow
+feature_type.txt: feature type file for ml workflow
+go.obo: GO database file
+
+Scripts:
+rem_specific_pcg.py: remove parent and child GO terms from dataset for ml
+workflow
+rf_go_ghp.py: run rf model in my ml workflow, but used selected grps of hps
+(selected from hp test - most freq hp grp)
+rf_go_v2.py: run rf model in my ml workflow (hp selected are the most freq
+individual hps from hp test)
+rf_oob_dhp.py: run rf model in my ml workflow, default hps used
+rf_oob.py: run rf model in my ml workflow, hps chosen from random search
+for each class
+wrapper_go_v2.py: wrapper script to run my ml workflow

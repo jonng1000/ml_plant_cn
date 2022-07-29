@@ -1,0 +1,41 @@
+Input files used for  build_RF_score_v3.py are stored in input_files folder.
+Output files are stored in the outfiles folder. They have the pattern
+- *_build_s.txt: model scores when it is being iteratively built by blocks
+of features
+- *_feature.txt: feature importance values, 100 runs
+- *_scores.txt: model scores, full feature set, 100 runs
+
+Originally, these files are not in their respective folders, as they
+are in the same folder as the scripts which produced them:
+- build_RF_score_v3.py (takes *_feature.txt files and generates
+*_build_s.txt files)
+- rfe_module_v2.py (above script imports this)
+- rf_feature_extract_v2.py (generates *_scores.txt and
+*_feature.txt files)
+
+no_pfam: folder containing RF ml workflow, for use on dataset
+with reduced features (no pfam domains), and only 10 GO classes.
+These are chosen because suba also have the same GO class
+names.
+
+Log040320_2.Txt: Log File produced when build_RF_score_v3.py is
+ran. Everything is fine except for when nucleus data set is ran,
+produced warning (not captured here as it goes to stderr) saying
+that precision is set to 0 (something to do with no postive classes
+detected?). This is probably because this set is weird, top 100
+features have value of 0 for everything, so my workflow doesnt
+seem to work for this.
+
+log040320.txt: outdated log file, probably from an earlier run
+of my scripts, can ignore
+
+mucelus_test folder: rerun the above scripts on the nucleus GO data
+set, as it gave weird results the first time, but after rerunning
+it still looks weird.
+
+suba_test: folder containg my work on using suba predictions
+in my ML workflow, to see if it can accurately identify
+suba predictions as important features. It can't tho.
+
+Test files and scripts: rf_test.py, test_build_RF_score.py,
+test_log.txt: random stuff used for testing, can ignore

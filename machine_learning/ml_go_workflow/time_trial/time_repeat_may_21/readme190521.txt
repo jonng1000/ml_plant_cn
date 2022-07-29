@@ -1,0 +1,16 @@
+Folders
+
+Files
+class_targets_go.txt: 2 GO classes for ml workflow
+feature_type.txt: list of feature types for ml work
+go_GO_*scores.txt: scores file from ml workflow
+go.obo: GO database
+log*.txt: log files for ml workflow
+ml_dataset_dc.txt: ml dataset
+test_dataset.txt: small, test dataset
+
+Scripts
+multi_go_wrapper.py: wrapper script for ml workflow
+rem_specific_pcg.py: removes parent and child GO terms corresponding to the
+class label
+tt_multi_models.py: runs ml workflow for time experiment

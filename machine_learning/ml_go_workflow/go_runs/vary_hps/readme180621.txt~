@@ -1,0 +1,41 @@
+Folders
+outdated: contains outdated data for ml, can ignore
+- class_labels, class_labels64, class_labels128:
+folder contains files of GO class targets for ml,
+different folders has different number of files, number
+at the end of the folder is related to the number of files
+- outputX, where X is 1/2/3/8/16/32/64/128: results from ml
+workflow when that number of cores is run using parallel
+
+output 4b: same desc as that for outputX, but 4 cores is used,
+4b is used as pickled models are not saved, output4 has pickled
+models which is used for downstream analysis, and hence is
+not in the outdated folder
+
+Files
+class_labels_go.txt: list of GO class targets for ml
+class_labels_linux.txt: same as class_labels_go.txt, but with linux
+line endings for use with parallel
+feature_type.txt: list of feature types for ml work
+go.obo: GO database
+log050521*, log090521*: log file from my ml workflow, number of
+cores is indicated, 4 means 4 cores and models are pickled, 4b
+means 4 cores
+log_dryrun.txt: log file with using parallel with its --dryrun
+option, on my ml workflow
+ml_dataset_dc.txt : ml dataset
+test_dataset.txt: smaller, test dataset
+
+Scripts
+multi_go_wrapper.py: wrapper script for ml workflow
+rf_go.py: runs ml workflow, with a specific number of cores
+rf_go_v2.py: updated version of rf_go.py, but models are pickled
+rem_specific_pcg.py: removes parent and child GO terms corresponding to the
+class label
+wrapper_go.py: wrapper script for ml workflow
+wrapper_go_v2.py: updated version of wrapper_go.py to make things more efficient
+
+Misc
+Needed to do below to change how my class labels are named in the target list:
+sed 's/go_GO/GO/g' class_labels_go.txt > class_labels_linux.txt
+This is to make my target list compatible with my new workflow

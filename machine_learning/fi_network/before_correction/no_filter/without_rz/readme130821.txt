@@ -1,0 +1,29 @@
+Folders
+diff_grps: looking at different groups of features to explore why mutual
+rank distribution has a weird shape
+- explore_mr_grps.py: explores mutual rank (MR) distributiom for
+different feature categories
+- *.png: histograms from explore_mr_grps.py, showing MR distribution
+
+Files
+fi_mr_line.png; line plot for mutual rank distribution
+feature_ranks.txt: ranks of feature importance values
+fi_mr_box.png: boxplot of mutual rank distribution
+gmean_fi_hist.png: histogram of geometric mean of feature importance
+distribution
+gmean_fi.txt: geometric mean of feature importance distribution
+mutual_ranks.txt: mutual ranks of feature importances
+prop_ab.txt: proportion of feature categories for high and low MR clusters
+p_values.txt: p-values from permutation test
+
+Scripts
+build_fi_network.py: build mutual ranks from all feature ranks
+explore_net_prop.py: explores mutual rank (MR) distribution  and obtain
+proportion of feature categories for high and low MR clusters
+explore_gfi.py: calculates geometric mean from all feature importances, plots
+histogram of this info
+explore_line_test.py: line plot for mutual rank distribution
+explore_network_box.py: boxplot of mutual rank distribution
+perm_test_prop.py: permutation test on features to see if there's any
+significant difference between two clusters of features observed from
+mutual rank distribution

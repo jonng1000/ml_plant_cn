@@ -1,0 +1,50 @@
+Folders
+hp_runs_para: running various kinds of hp tests (see folder's readme for
+further info), but with parallel
+hp_para_aug21: running various kinds of hp tests (see folder's readme for
+further info), but with parallel, done aug 2021 as ml dataset is corrected
+due to minor errors
+- there's another folder in
+~/machine_learning/ml_go_workflow/hp_test/hp_runs_para/repeat_aug2021
+which is similar to this, but with original data w the minor errors, this
+folder is just to make sure that my original runs were done correctly
+outdated: outdated info
+- results_uncertain: contains results of some of my hp test, but not sure
+what this is, could be optimised hps for 16 GO classes (marek selection),
+so just ignore it
+results_71_ohp: results from 71 GO classes used for hp test,
+random search to optimise hps
+results_16c_dhp: results for 16 GO classes (marek selection), default hps
+results_dhp: results from 71 GO classes used for hp test, default hps
+results_16c_ohp: results for 16 GO classes (marek selection), optimised hps
+via random search
+
+Files
+class_targets_go.txt: 16 GO classes (marek selection) for ml workflow
+ct_go_hp.txt: 71 GO classes for ml workflow
+feature_type.txt: list of feature types for ml work
+go.obo: GO database
+log*.txt: log files for ml workflow
+- if file has '_b', it means it is paired with the log file without this suffix
+ml_dataset_dc.txt: ml dataset
+
+Scripts
+go_hp_wrapper.py: wrapper script for ml workflow
+rem_specific_pcg.py: removes parent and child GO terms corresponding to the
+class label
+rf_oob_dhp.py: runs ml workflow, default hps
+rf_oob.py: runs ml workflow, random search for hps
+
+Notes
+- all the files in hp_test folder are used in my workflow without using parallel,
+hence those which are in my workflow using parallel, are separated into the
+hp_runs_para folder
+- results folders may be named differently from the results folder names from my
+scripts, but thats because i renamed it after my workflow is completed to make it
+more clear
+Impt 221121: realised the same value for ccp_alpha occurs twice for my hp test,
+not sure if this error occurs for other hp test scripts, too late to do
+anything abt it, but just take note in case i wanna use this script in future
+
+If got time: check to make sure rf_oob_dhp.py really produces results which match
+results_dhp and results_ohp

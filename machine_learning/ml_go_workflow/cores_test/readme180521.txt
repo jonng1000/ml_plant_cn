@@ -1,0 +1,16 @@
+Folders
+results: results from cores test
+
+Files
+class_targets_go.txt: GO class targets for ml workflow
+feature_type.txt: list of feature types for ml work
+go.obo: GO database
+log270421.txt: log file from my ml workflow
+ml_dataset_dc.txt : ml dataset
+test_dataset.txt: smaller, test dataset
+
+Scripts
+multi_go_wrapper.py: wrapper script for ml workflow
+rf_cores.py: runs ml workflow, varies number of cores used
+rem_specific_pcg.py: removes parent and child GO terms corresponding to the
+class label

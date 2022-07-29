@@ -1,0 +1,6 @@
+sshd_config_301019 is originally named sshd_config
+This is the orig sshd config file from 301019, before I made changes
+to try and use XMing on Windows. But it doesnt work so I removed the
+changes. I've kept a copy of the original file and named it
+sshd_config_301019, in case i need it in future, if the file in the ssh
+folder turns out to be buggy.

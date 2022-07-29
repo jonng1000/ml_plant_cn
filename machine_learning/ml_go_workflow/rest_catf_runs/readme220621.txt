@@ -1,0 +1,19 @@
+Folders
+output: results from ml workflow
+
+Files
+class_labels_rcf.txt: list of categorical targets (non-GO and DGE) for ml
+class_labels_linux.txt: same as class_labels_rcf.txt, but with linux
+line endings for use with parallel
+feature_type.txt: list of feature types for ml work
+log_210621.txt: log file from my ml workflow
+ml_dataset_dc.txt: ml dataset
+test_dataset_rcf.txt: test ml dataset for ml workflow
+
+Scripts
+rem_placeholder.py: placeholder removal script, not needed for
+these categorical features, but needed for my ml workflow
+rf_rcf.py: rf script for model training with categorical targets
+(non-GO and DGE)
+wrapper_rcf.py: wrapper script for ml workflow, categorical targets
+(non-GO and DGE)

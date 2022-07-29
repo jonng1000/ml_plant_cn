@@ -1,0 +1,23 @@
+Folders
+mcl-14-137: mcl program folder
+
+Files
+ath_ppi.abc: arabidopsis ppi network in .abc format for mcl
+data.base:  baseline coarse clustering consisting of the natural
+maximum components of the input graph, can be used for some kind of QC of
+clustering quality
+data.mci: some intermediate format which mcl needs in order to do clustering
+data.tab: ditto for data.mci
+out.data.mci.I12: output for mcl, some info which can be used for downstream
+work, but does not have cluster info
+out.data.mci.I14: ditto for out.data.mci.I12
+out.data.mci.I20: ditto for out.data.mci.I12
+out.data.mci.I40: ditto for out.data.mci.I12
+out.data.mci.I50: ditto for out.data.mci.I12
+dump.data.mci.I14: cluster info from mcl
+dump.data.mci.I20: ditto for dump.data.mci.I14
+dump.data.mci.I40: ditto for dump.data.mci.I14
+dump.data.mci.I50: ditto for dump.data.mci.I14
+mcl-latest.tar.gz: tarball, mcl installation
+log_161020.txt: log file when mcl is run
+log_151020.txt: ditto for log_161020.txt

@@ -1,0 +1,8 @@
+Folders
+time_repeat_may_21: repeat of time test, 5 ml models, model training only
+without testing, measure time taken, 2 randomly chosen GO classes
+trial_apr_21: 5 ml models, 16 GO classes, measure time taken
+trial_repeat_jun_21: repeat of time test, jun 2021, most updated one
+
+Notes
+Edited the organisation of these files 130821

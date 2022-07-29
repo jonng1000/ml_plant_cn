@@ -1,0 +1,24 @@
+Folders
+anaconda3: anaconda installed files
+interproscan: interproscan installed files
+local: originally existed once my account got created
+OrthoFinder: orthofinder installed files
+Aspera: aspera installed files
+mcl-14-137: mcl installed files
+sra_folder: folder to hold downloaded files using sratoolkir
+tmhmm-2.0c: tmhmm installed files
+workstation_JN: my own data for research
+machine_learning: ml runs and scripts, various things are tried to
+improve ml scores
+mbox_folder: stores mbox files, saved mails from linux mail program
+dask-worker-space: dask folder from when i was experimenting w dask
+
+Files
+Anaconda3-2020.07-Linux-x86_64.sh: script to install anaconda
+mcl-latest.tar.gz: mcl tarball for installation
+sratoolkit.2.10.8-ubuntu64: unzipped from sratoolkit.2.10.8-ubuntu64.tar.gz
+sratoolkit.2.10.8-ubuntu64.tar.gz: sratoolkit for installation
+tmhmm-2.0c: unzipped from tmhmm-2.0c.Linux.tar.gz
+tmhmm-2.0c_license.txt: tmhmm file
+tmhmm-2.0c.Linux.tar.gz: tmhmm tarball for installation
+mbox: saved mails from linux mail program

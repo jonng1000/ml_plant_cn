@@ -1,0 +1,49 @@
+Folders
+kal_output: Contains all output folders from kallisto processing
+sleuth_metadata: Metadata for each sub experiment. Each experiment can
+be split into several sub experiments, so this folder contains their
+metadata
+sleuth_output: Sleuth output for each sub experiment
+test_environment: for testing kallisto and sleuth programs and output
+
+Scripts
+check_3rna_files.py: Checks if RNA-seq data has 3 fastq files and redownloads
+them if that is true. Also creates and sorts thru a list containing RNA-seq
+run ID and number of processed reads.
+check_3rna_cli.py: command line version of check_3rna_files.py, with
+further modifications
+check_3rna_wrapper.py: wrapper for check_3rna_cli.py, also creates a list,
+sorted in ascending order, of the number of RNA reads produced by kallistio
+combine_sleuth.py: Combine sleuth output to created one hot encoded features of
+genes which are up and down regulated across all experiments.
+Produces dge_1HE.txt
+process_cs.py: From dge_1HE.txt, replaced blanks with NA, and floats
+with integers. Produces dge_1HE_edited.txt
+rna_dl_kallisto.py: downloads RNA-seq data and processes it with kallisto,
+rna_seq_dl.txt supplies it with RNA-seq run ids. Outdated by rna_kal_cli.py
+rna_kal_cli.py: Command line and improved version of rna_dl_kallisto.py,
+as it removed the bug where it doesnt process datasets with 3 fastq files
+properly
+rna_kal_wrapper.py: wrapper script to read in rna_seq_dl.txt (supplies
+the RNA-seq run ids) and runs rna_kal_cli.py accordingly
+running_sleuth_cli.R: Running sleuth via command line
+sleuth_preprocess.py: Preprocessing flies for sleuth. Splits all
+experiments into their specific sub experiments with 1 test and 1
+control set of samples
+sleuth_wrapper.py: Wrapper for running_sleuth_cli.R to run it on all sub
+experiments to get their output
+
+
+Files
+index.html: no idea whats this, dont delete
+rna_seq_dl.txt: List of RNA-seq run IDs to download programmatically
+Athaliana.idx: index file produced and needed by kallisto
+dge_1HE_edited.txt: edited dge_1HE.txt
+dge_1HE.txt: output from combine_sleuth.py
+dge_test_control_labels.tsv: labels for test and control RNA seq samples
+log170820.txt: Log file showing print output when rna_kal_cli.py is running
+
+Notes: Quite a lot of scripts to check RNA downloads, because I realise some
+files fail sanity checks, so made several scripts to figure out why, but in the
+end I realised that sometimes the URL tims out when downloading data, so thats why
+the sanity check fails. So I think this is fine

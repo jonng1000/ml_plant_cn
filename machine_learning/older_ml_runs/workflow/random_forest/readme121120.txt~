@@ -1,0 +1,24 @@
+Folders
+
+Scripts
+ml_run_qe.py: ml pipeline with qe hyperparameters
+ml_run_mqe.py: ml pipeline with expanded range of qe hyperparameters
+ml_run_v2.py: ml pipeline takes in ml_data_label.txt and produces
+Other *.py scripts: different types of random forest trial ml scripts,
+read it to find out what it does
+
+
+_scores.txt:  Other scripts with similar names to it has
+the same input and output files.
+
+
+Files
+draft_ml_scores.txt: Manual record of ml scores and model details
+ccp_ml_scores.txt: same as raft_ml_scores.txt, but ccp hyperparameter is tested
+feature_type.txt: Shows which features are categorical and continuous, based on
+their prefix
+gs_rf_201120.txt: grid search scores results
+ml_data_label_scores.txt: ml scores, produced by ml_run_v2.py (and other
+scripts with similar names)
+ml_data_label_sf_scores.txt: same content as ml_data_label_scores.txt
+ml_data_label.txt: ml dataset, has features and class labels

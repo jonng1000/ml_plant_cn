@@ -1,0 +1,4 @@
+Folders
+runs16: early ml runs on 16 cell locations
+runs16_v2: version 2 of the above, improved workflow
+runs16_ran_v2: ml workflow from runs16_v2, but with randomised feature values

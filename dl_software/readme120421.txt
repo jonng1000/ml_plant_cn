@@ -1,0 +1,3 @@
+mcl-latest.tar.gz: mcl tarball for installation
+sratoolkit.2.10.8-ubuntu64.tar.gz: sratoolkit for installation
+tmhmm-2.0c.Linux.tar.gz: tmhmm tarball for installation

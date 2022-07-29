@@ -1,0 +1,20 @@
+Folders
+problem_200521: files here have some issues, so can ignore
+
+Files
+class_targets_go.txt: 2 GO classes for ml workflow
+feature_type.txt: list of feature types for ml work
+*go_GO_*scores.txt: scores file from ml workflow
+go.obo: GO database
+log*.txt: log files for ml workflow
+ml_dataset_dc.txt: ml dataset
+
+Scripts
+brf_test.py: script for running brf model (used)
+llm_test.py: script for running ml models (not used)
+loglsv_test.py: test script for running logr and lsv models (used)
+lsv_test.py: test script for running lsv models (used)
+multi_go_wrapper.py: wrapper script for ml workflow
+ot_test.py: test script for running rf and ada models (used)
+rem_specific_pcg.py: removes parent and child GO terms corresponding to the
+class label

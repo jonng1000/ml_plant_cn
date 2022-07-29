@@ -1,0 +1,12 @@
+Files
+go_GO:0005829*, go_GO:0016020*: output files from time test, not impr tho
+lsv_logs.txt: logs containing printout of all logr time tests
+lsv_test_alt.py: tests logr with several iteration numbers
+lsv_test.py: tests logr with a higher iteration
+multi_wrapper_test.py: wrapper for entire ml workflow, to use with
+lsv_test scripts
+
+Notes
+Same as readme190421.txt in :~/machine_learning/ml_go_workflow/time_trial
+so can read that for more info, files which are unique to this folder are
+explained above

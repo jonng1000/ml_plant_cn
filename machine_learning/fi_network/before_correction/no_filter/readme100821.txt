@@ -1,0 +1,22 @@
+Folders
+without_rz: contains work done when mutual rank (MR) calculation is done incorr\
+ectly, as feature importance values of 0 have not been removed
+
+Files
+big_fi.png: histogram of feature importance of all features
+(has feature importance values of 0, but this is important)
+big_fi.txt: contains all feature importance values for all features
+(has feature importance values of 0, but this is important)
+fi_mr_hist_ylog50b.png: histogram of mutual rank distribution,
+50 bins
+nonzero_mr.png: histogram of mutual rank distribution,
+feature importance values of 0 have been removed
+nonzero_mr.txt: mutual ranks of feature importance values, those with
+0 have been removed
+
+Scripts
+explore_fi.py: plots histogram of feature importance
+cal_mr_nonzero.py: creates mutual ranks from all features,
+ignore feature importance values that are zero
+explore_mr.py: plot histogram of mutual rank distribution, feature
+importance values of 0 have been removed

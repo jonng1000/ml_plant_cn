@@ -1,0 +1,4 @@
+aranet.abc: input file for mcl, made by me, has aranet gene edges
+data.mci, data.tab, out.data.mci.I20: files produced during the process of
+running mcl, can see https://micans.org/mcl/
+dump.data.mci.I20: output of mcl

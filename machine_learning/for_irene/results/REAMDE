@@ -1,0 +1,2 @@
+rsync --progress -rave ssh irene@ChuckNorris.dynip.ntu.edu.sg:/home/jonathan/machine_learning/for_irene/ ../Jonathan/
+more /proc/286083/smaps | grep -w Size >memory

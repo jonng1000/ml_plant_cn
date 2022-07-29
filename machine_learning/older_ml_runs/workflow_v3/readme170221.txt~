@@ -1,0 +1,31 @@
+Folders
+hp_trial: Multiple runs of my workflow using randomsearch, to see if there's
+any hp which shows up most frequently as being linked to high scores
+- results: 5 iterations of random search
+- results_10: 10 iterations of random search
+- results_20: 20 iterations of random search (took about 1 wk to run,
+so can use this as a benchmark to plan and execute future ml workflows)
+time_trial: folder containing ml work done to measure time taken by various
+ml algos, check folder's readme for more info
+
+Files
+ct_go_hp.txt: list of 71 GO terms for ml workflow, uses 5 iterations of
+random search
+ct_go_hp_v2.txt: list of 135 GO terms for ml workflow, uses 10 and later 20,
+iterations of random search
+feature_type.txt: lists categories of features, used in ml workflow
+go.obo: GO file, used in ml workflow
+log*.txt: log files from running ml workflow
+ml_dataset_dc.txt: ml dataset, used in ml workflow
+
+Scripts
+go_hp_wrapper.py: wrapper script for ml workflow for hp tests
+rem_specific_pcg.py: removes parent and child GO terms corresponding to
+GO term used as class label
+rf_75classes.py: RF script used on smaller set (71) classes, 5 iterations
+for hp test, used in ml workflow
+rf_m_classes.py: RF script used on larger set (135) classes, 10 iterations
+for hp test, used in ml workflow
+rf_m_classes_v2.py: RF script used on larger set (135) classes, 20 iterations
+for hp test, oob score calculated using f1, used in ml workflow
+rf_test.py: RF script just for testing

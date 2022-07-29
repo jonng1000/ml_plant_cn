@@ -1,0 +1,9 @@
+scripts: build_RF_score_v3.py, rfe_module_v2.py, rf_feature_extract_v2.py;
+these scripts are used to generate the output files
+
+folders: test1, test2;
+input and output files are shifted into these files.
+test1 -> first test of suba predictions, slightly wrong because it has
+AraCyc annotation as three separate features (GM, SM, GM and SM).
+test2 -> remove above error, still see that ML workflow cannot accurately
+identify suba predictions as important features tho

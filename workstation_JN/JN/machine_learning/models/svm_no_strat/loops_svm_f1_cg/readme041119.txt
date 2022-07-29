@@ -1,0 +1,2 @@
+Output of slf1.py, 100 loops of grid search set to f1 and model building.
+Wider range of C and gamma used

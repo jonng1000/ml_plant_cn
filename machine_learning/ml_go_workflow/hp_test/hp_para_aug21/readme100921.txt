@@ -1,0 +1,18 @@
+Folders
+results_71_rshp: results from 71 GO classes used for hp test,
+random search to optimise hps
+
+Files
+class_labels16_linux.txt: 16 GO classes (marek selection) for ml workflow
+ct_go_hp_linux.txt: 71 GO classes for ml workflow
+feature_type.txt: list of feature types for ml work
+go.obo: GO database
+log*.txt: log files for ml workflow
+ml_dataset_dc.txt: ml dataset
+
+Scripts
+wrapper_go_v2.py: wrapper script for ml workflow
+rem_specific_pcg.py: removes parent and child GO terms corresponding to the
+class label
+rf_oob_dhp.py: runs ml workflow, default hps
+rf_oob.py: runs ml workflow, random search for hps

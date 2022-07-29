@@ -1,0 +1,2 @@
+goa_uni_all_10.txt is the first ten lines of the goa unipot .gaf file with
+all its annotations. too big to open so only looked at the first 10 lines.

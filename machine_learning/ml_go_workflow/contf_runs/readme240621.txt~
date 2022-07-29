@@ -1,0 +1,36 @@
+Folders
+outdated: outdated files from wrong ml workflows, can ignore
+- log_210621_2.txt, log_210621.txt, log220621.txt, log220621_2.txt:
+outdated log files from ml workflows, was useful previously as it
+showed what errors my workflow had
+- log_dryrun220621_2.txt, log_dryrun220621_3.txt, log_dryrun220621_4.txt,
+log_dryrun220621.txt, log_testrun220621.txt, log_dry220621.txt:
+dry runs to show what happens when i am running my workflow,
+used to help me repair the bugs
+- ml_dataset_mod.txt: modified ml dataset, replaced spaces in continuous
+feature names with _, for debugging, but it didnt work
+- mod_data_contf.py: modifies ml daatset, by replacing spaces in continuous
+feature names with _, for debugging, but it didnt work
+
+log290621_8.txt: log file from corrected ml workflow, other files like
+this with different or no (no underscore followed by a number) prefixes,
+outdated log files produced during workflow correction, can ignore
+
+log_dry290621.txt, log_test290621_7.txt: log files from ml workflow dry runs,
+files with prefixes (underscore followed by a number) are just older versions
+produced during workflow correction, can ignore
+
+Files
+ml_dataset_dc.txt: downcasted ml dataset for ml work
+mod_class_labels_contf.txt: modified list of continuous features as targets for ml
+workflow, has job_id added
+mod_class_labels_linux.txt: similar to mod_class_labels_contf.txt, but with windows
+line endings replaced by linux line endings, for use in ml workflow
+test_class_labels_linux.txt:
+
+Scripts
+rem_placeholder.py: placeholder removal script, used for the earlier version of
+ml workflow, but is not needed for the updated and corrected one
+rf_contf.py: rf model training script for continuous features as targets, earlier version
+rf_contf_v2.py: rf model training script for continuous features as targets, updated
+and corrected version

@@ -1,0 +1,17 @@
+These folders have been transferred from workstation computer, caa 211020. From
+this date onwards, all work will be done on this computer (ChuckNorris), as
+workstation is being removed. ChuckNorris has replaced it as the more powerful
+workstation computer.
+
+From my user account jon@darwin1809:
+ind_classes: machine learning model on individual GO classes
+networks: network data and output
+rna_processed: kallisto and sleuth work
+interpro_290520: interpro work
+ml_GO_classes: like ind_classes, but earlier work
+RF_PNAS: ml work on pnas dataset
+temp: temp file, auto created by the computer, can ignore
+
+From my user account workstation@darwin1809:
+JN: work done in that account, just look at individual readme files
+for further info

@@ -1,0 +1,31 @@
+Folders
+data_creation_outdated: outdated stuff for data creation for ml work, can ignore
+outdated: outdated model output, can ignore
+results: ml results
+tests: folder just to test things
+
+Scripts
+ada_16cl_v3.py: ml script using only adaboost
+rf_16cl_v3.py: ml script using only 
+multi_go_wrapper.py: wrapper script to run entire ml workflow, runs multi_models_go.py (this script is missing, prob got deleted, but its not impt so can
+ignore 190421)
+customised for go terms
+multi_targets_wrapper.py: general wrapper script to run entire ml workflow
+multi_models_go.py: ml models script, customised for go terms (this script is
+missing, prob got deleted, but its not impt so can ignore 190421)
+multi_models.py: general ml script for workflow
+rem_parent_child_go.py: for each go term, removes its corresponding parent and child terms,
+not used
+rem_specific_pcg.py: for a specific go term, removes its corresponding parent and child terms,
+used in ml workflow
+
+Files
+class_targets_dge.txt: class targets for dge experiments
+class_targets_go.txt: class targets for 20 go terms
+class_targets.txt: class targets for both dge and go classes above
+feature_type.txt: types of features for ml workflow
+go.obo: GO file used for ml workflow
+log*: log files recordding what happens when i run my ml workflow
+ml_dataset_dc.txt: ml data for ml workflow
+
+

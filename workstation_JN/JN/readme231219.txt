@@ -1,0 +1,4 @@
+diurnal_project was moved from here to /home/data1/JN_data (big storage) 
+to save space on main drive.
+
+flashing_pi was moved from here to /home/data1/JN_data/flashing_pi to save space

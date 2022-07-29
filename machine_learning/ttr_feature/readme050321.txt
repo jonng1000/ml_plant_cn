@@ -1,0 +1,15 @@
+Folders
+tests: test folder, where I was just testing mcl to see if graph was symmetrical,
+but can ignore these files, where generated based on
+https://micans.org/mcl/man/mclfaq.html#goodinput and
+https://micans.org/mcl/man/mcxi.html
+
+Files
+data.mci, data.tab, out.data.mci.I20: files produced during the process of
+running mcl, can see https://micans.org/mcl/
+dump.data.mci.I20: output of mcl
+out.data.mci.I40, dump.data.mci.I40, out.data.mci.I60: files produced by running
+mcl, like those above, but these are done with different inflation values so can
+ignore
+tftg_reg_net.abc: input file for mcl, made by me, has transcription factor-target
+gene edges

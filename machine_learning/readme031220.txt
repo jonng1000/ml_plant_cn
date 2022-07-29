@@ -1,0 +1,14 @@
+Folders
+ara_feature: functional gene network (aranet) features
+fi_network: feature importance network analysis
+for_irene: data given to irene to help me run my smote workflow around
+end Nov 2020
+older_ml_runs: older ml workflows, before march 2021
+ml_go_workflow: current ml workflows, complete feature set for ml
+ml_experimental_work: ml workflow using only computational GO terms for experimental
+GO term prediction, my own experiments and not officially part of my phd
+ttr_feature: transcription factor target gene regulatory network (ttr) feature
+files, used mcl
+
+Files:
+feature_type.txt: describes type of features, used for workflow folder

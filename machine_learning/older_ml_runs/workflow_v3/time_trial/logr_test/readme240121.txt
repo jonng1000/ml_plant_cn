@@ -1,0 +1,17 @@
+Scripts
+mm_go_v2_logr_test.py: script to test out lsv with different number of iterations
+to achieve convergence
+wrapper script for above script
+
+Files
+class_targets_go.txt: class label for this test workflow
+scores and fi .txt files: results when running this test workflow several times
+- itr10k: 100m iterations
+- itr5k: 50m iterations
+
+Notes
+Has only files unique to this test
+Missing the wrapper script for above ml script, but its fine, since it was
+probably overwritten
+
+

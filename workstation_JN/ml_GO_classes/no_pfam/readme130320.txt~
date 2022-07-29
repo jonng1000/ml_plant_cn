@@ -1,0 +1,8 @@
+Folders
+test1: created raw data set from scratch in Mar '20, from PNAS
+supplementary data, then did RF ml workflow.
+test2: used the raw data set from earlier work done in Jul '19, from PNAS
+supplementary data, then did RF ml workflow.
+
+Purpose of these two tests, is to check that my Jul' 19 creation of
+the raw data set is done correctly. If it is, my workflow resuls should be similar.

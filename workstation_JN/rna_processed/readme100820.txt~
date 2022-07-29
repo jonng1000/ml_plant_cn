@@ -1,0 +1,20 @@
+Folders
+kal_output: Contains all output folders from kallisto processing
+
+Scripts
+check_3rna_files.py: Checks if RNA-seq data has 3 fastq files and redownloads
+them if that is true. Also creates and sorts thru a list containing RNA-seq
+run ID and number of processed reads.
+check_rna_kal.py: Explores downloaded processed rna data by kallisto
+rna_dl_kallisto.py: downloads RNA-seq data and processes it with kallisto,
+rna_seq_dl.txt supplies it with RNA-seq run ids. Outdated by rna_kal_cli.py
+rna_kal_cli.py: Command line and improved version of rna_dl_kallisto.py,
+as it removed the bug where it doesnt process datasets with 3 fastq files
+properly
+rna_kal_wrapper.py: wrapper script to read in rna_seq_dl.txt (supplies
+the RNA-seq run ids) and runs rna_kal_cli.py accordingly
+
+Files
+index.html: no idea whats this, dont delete
+rna_seq_dl.txt: List of RNA-seq run IDs to download programmatically
+Athaliana.idx: index file produced and needed by kallisto

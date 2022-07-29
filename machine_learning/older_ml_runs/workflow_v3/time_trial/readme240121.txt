@@ -1,0 +1,20 @@
+Folders
+lsv_test, logr_test: tests to determine how many iterations is needed for
+convergence
+
+Scripts
+multi_models_go_v2.py: ml workflow script
+multi_go_wrapper.py: wrapper script for above script
+rem_specific_pcg.py: removes parent and child GO terms for each GO term used
+as class label
+
+Files
+class_targets_go.txt: class labels with GO terms, used for ml workflow
+feature_type.txt, go.obo, ml_dataset_dc.txt: feature types, GO file, ml
+dataset files, respectively, used for ml workflow
+
+Notes
+Originally swapped the order of the first two GO terms in the class targets
+file, when testing my workflow to see how long logistic regression takes on the
+full workflow, but I have swapped back
+

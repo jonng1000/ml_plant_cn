@@ -1,0 +1,15 @@
+Folders
+data16: datasets with 16 class labels, one for each of the 16 GO cell
+locations
+log_folder: log files of successful ml runs
+results: contains results from ml scripts
+
+Files
+
+Scripts
+ada_16cl_v2.py, brf_16cl_v2.py, logr_16cl_v2.py, lsv_16cl_v2.py,
+rf_16cl_v2.py: version 2 of the above scripts,
+improved version
+test_ada_16cl_v2.py: test script to make sure ml script works, has some
+adjustments like 2-fold cv for gridsearch, only one set of hyerparameters
+tested etc
